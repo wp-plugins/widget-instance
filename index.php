@@ -3,16 +3,16 @@
 Plugin Name: Widget Instance
 Plugin URI: http://bcooling.com.au
 Description: Display/output a specific widget instance using either a shortcode, function, action or wysiwyg button
-Version: 0.9.2
+Version: 0.9.3
 Author: Ben Cooling
 Author URI: http://bcooling.com.au
 License: Copyright Ben Cooling
 */
 
 /**
- * 
+ *
  * Bootstrap file for plugin
- * 
+ *
  */
 
 // Plugin Constants
@@ -41,7 +41,7 @@ if (! class_exists($className) ){
 
 $tWi_Plugin = new $className;
 
-// template tags need to be in global space, otherwise this would belong in Public class. 
+// template tags need to be in global space, otherwise this would belong in Public class.
 if ($file==='Public'){
   function get_the_widget_instance($widget_id, $format=false){
     ob_start();

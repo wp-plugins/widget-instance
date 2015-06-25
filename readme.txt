@@ -3,20 +3,20 @@ Contributors: global_1981
 Donate link: http://bcooling.com.au
 Tags: widget, widgets, display widget, widget instance
 Requires at least: 2.9.1
-Tested up to: 3.5.1
+Tested up to: 4.2.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Display/output a specific widget instance using either a shortcode, function, action or wysiwyg button.
+Display an active widget added to a sidebar within the editor or by using a shortcode, function or action.
 
 == Description ==
 
 Widgets are normally displayed as part of a sidebar using the dynamic_sidebar()
 function. There is the_widget function for static widgets, but there is no
-equivalent for specific widgets configured in the Appearance > Widgets area. 
+equivalent for specific widgets configured in the Appearance > Widgets area.
 
-The Widget Instance plugin empowers Wordpress users of all abilities to display
+The Widget Instance plugin allows Wordpress users of all abilities to display
 these widgets outside of the sidebars they have been assigned to.
 
 Features
@@ -40,9 +40,9 @@ This section describes how to install the plugin and get it working.
 
 1. Upload `widget-instance` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Within the editor, you can use the Widget Instance editor button to select 
+1. Within the editor, you can use the Widget Instance editor button to select
 from available widgets or enter a shortcode following the syntax: [widget_instance id="[widget_id]"]
-1. Optional step: If you would like to retain the sidebar format of the widget, check the Include Sidebar format checkbox 
+1. Optional step: If you would like to retain the sidebar format of the widget, check the Include Sidebar format checkbox
 1. Within template files you can use the following php snippets:
 
 * Action: do_action('widget_instance', '[widget_id]');
@@ -54,9 +54,9 @@ from available widgets or enter a shortcode following the syntax: [widget_instan
 
 = How do I get the widget id? =
 
-Of course the editor button automagically retrieves all the available widgets 
+Of course the editor button automagically retrieves all the available widgets
 (and their ids) for you, but if you are using one of the PHP functions, you can
-get the available widget ids by looping over the array returned by the function 
+get the available widget ids by looping over the array returned by the function
 wp_get_sidebars_widgets()
 
 
@@ -67,6 +67,9 @@ wp_get_sidebars_widgets()
 
 
 == Changelog ==
+
+= 0.9.3 =
+* Tested in Wordpress 4.2.2, new banner, icons and tinymce button created.
 
 = 0.9.2 =
 * Added javascript loader, fix for wordpress installs where wp-includes url is not in the root.
